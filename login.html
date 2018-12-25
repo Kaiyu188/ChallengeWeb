@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Login</title>
+		<link rel="stylesheet" href="./style.css">
+		<script>
+			function signin(){
+				var username= document.getElementById("user").value;
+				var password = document.getElementById("pass").value;
+				if (username == "kaiyu" && password == "neverland"){
+				alert ("Login success");
+				window.location="./project/index.html";
+			}
+}
+		</script>
+	</head>
+	<body>
+		<form class="box" action="login.html" method="post">
+			<h1>Login</h1>
+			<input type="text" name="user" id="user" placeholder="Username"/>
+			<input type="password" name="pass" id="pass" placeholder="Password"/>
+			<input type="button" name="login" value="Login" onclick="signin()"/>
+		</form>
+	</body>
+</html>
